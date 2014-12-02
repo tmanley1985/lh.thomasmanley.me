@@ -2,14 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Thomas Manley|{Codeslinger}</title>
+		<title>Thomas Manley|Full Stack Developer</title>
 		<link rel="shortcut icon" href="/graphics/favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="/css/simplegrid.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
 		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-		<script src="js/responsiveslides/responsiveslides.min.js"></script>			
 	</head>
 <body>
 	<header>
