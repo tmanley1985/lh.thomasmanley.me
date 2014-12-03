@@ -17,6 +17,11 @@ h3{
 	color:#ffd900;
 	font-size:4.5em;
 }
+h4{
+	color:#ffd900;
+	font-size:3em;
+
+}
 p{
 	font-family: 'Indie Flower';
 	font-size: 1.25em;
@@ -96,7 +101,7 @@ footer p,pre{
 /****************
 FORMS
 ****************/
-form {width: 375px; margin-left:auto; margin-right: auto;}
+form {width: 375px; margin-top:10%; margin-left:auto; margin-right: auto;}
 form tr {
     border: 1px solid #CCC;
     background: #f4f3f2;
@@ -147,6 +152,7 @@ CUSTOM
 .convo{
 	font-family: 'Indie Flower', cursive;
 	color:black;
+	font-size:1em;
 	font-weight: bold;
 	padding: 1%;
 }
