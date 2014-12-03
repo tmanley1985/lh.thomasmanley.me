@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="/css/simplegrid.css">
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	</head>
 <body>
