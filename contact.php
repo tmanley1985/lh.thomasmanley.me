@@ -69,35 +69,37 @@
 ?>
 
 <?php if(isset($_GET['status']) && $_GET['status'] == 'thanks'){?>
-	<h3>Thanks for the email, I&rsquo;ll be in touch shortly!</h3>
+	<h4>Thanks for the email, I&rsquo;ll be in touch shortly!</h4>
 <?php }else{ ?>
-	<h2>Send me an email!</h2>
-	<form method="post" action="contact.php">
+	<h2>You can contact me using the social networking links above<br> Or send me an email!</h2>
+	<br>
+	<br>
+	<form id="emailform" method="post" action="contact.php">
 		<table>
 			<tr>
 				<th>
-					<label for="name">Name<label>
+					<label for="name">Name(required)<label>
 				</th>
 				<td>
-					<input type="text" name="name" id="name">
+					<input type="text" name="name" id="name" required>
 				</td>
 			</tr>
 
 			<tr>
 				<th>
-					<label for="email">Email<label>
+					<label for="email">Email(required)<label>
 				</th>
 				<td>
-					<input type="text" name="email" id="email">
+					<input type="text" name="email" id="email" required>
 				</td>
 			</tr>
 
 			<tr>
 				<th>
-					<label for="message">Message<label>
+					<label for="message">Message(required)<label>
 				</th>
 				<td>
-					<textarea name="message" id="message"></textarea>
+					<textarea name="message" id="message" required></textarea>
 				</td>
 			</tr>
 			<tr style="display:none;">
@@ -122,7 +124,40 @@
 		'padding': '2%',
 		'min-height': '100%'
 	});
- </script>
+</script>
+<script>
+	$("#emailform").validate({
+		rules: {
+			name:{
+				required: true,
+				minlength: 2,
+				lettersonly: true,
+			},
+	    	email: {
+		      	required: true,
+		      	email: true,
+		    },
+		    message: {
+		    	required: true,
+		    }
+	    },
+	    messages:{
+	    	name:{
+	    		required: "Please enter your name",
+	    		minlength: "Name should be more than two characters",
+	    		lettersonly: "Name should only contain letters"
+	    	},
+	    	email:{
+	    		required: "Please enter your email address",
+	    		email: "Please enter a valid email"
+	    	},
+	    	message:{
+	    		required: "Please enter your message"
+	    	}
+	    }
+	});
+</script>
 <?php
+
 	require('inc/footer.php');
 ?>
